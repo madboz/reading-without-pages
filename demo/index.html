@@ -58,8 +58,14 @@ h1 {
 .border{
   border: solid 1px black;
 }
+.left-m{
+  grid-column: 1;
+}
+.right-m{
+  grid-column: 4;
+}
 .left-half {
-  grid-column: 2 ;
+  grid-column: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -237,7 +243,7 @@ strong{
   <div class="right-half item border">
     Grid Container
     <br><br>
-    .grid-container {<br>&nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>&nbsp;&nbsp;&nbsp;&nbsp;grip-column-gap: 10px;<br>}
+    .grid-container {<br>&nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>&nbsp;&nbsp;&nbsp;&nbsp;grip-column-gap: 10px;<br>}<br><br><i>grid-template-columns</i> can take inputs in px, em, fr (fraction) or auto (adjust based on content size).
   </div>
   <!-- First -->
   <div class="full border"><br><br></div>
@@ -265,7 +271,7 @@ strong{
   <div class="right-half item border">
     Image Treatments
     <br><br>
-    Placing images in a grid for easy positioning.
+    Grid columns can be used to create compositions with images by placing them in columns.
   </div>
   <!-- Fifth -->
   <div class="full border"><br><br></div>
@@ -280,6 +286,9 @@ strong{
   </div>
   <div class="right-half item border">
     Text and Proportions
+    <br><br>
+    A more traditional application of columns would be for dividing the page into sections for multiple texts to have space on the page at once.<br><br>
+    Grid columns can be used to display one flowing text as well.
   </div>
   <!-- Third -->
   <div class="full border"><br><br></div>
@@ -292,7 +301,7 @@ strong{
   </div>
   <div class="right-half item border">
     Image and Text<br><br>
-    Nesting grids to create more complex interactions between text and images.
+    Using text and images in the same grid to create interactions between them.
   </div>
   <!-- Fourth -->
   <div class="full border"><br><br></div>
@@ -305,7 +314,7 @@ strong{
   <div class="right-half item border">
     Full Bleed Image
     <br><br>
-    Images can fill entire columns. 
+    Blocks of images can be created by filling entire columns with images. These methods can be nested to build up more complex layouts.
   </div>
   <!-- Sixth -->
   <div class="full border"><br><br></div>
@@ -323,7 +332,7 @@ strong{
   <div class="right-half item border">
     Overlaying Grids
     <br><br>
-    Overlaying two separate grids to prpoduce a more complex layout. The text is on a five column grid while the images are on a five column grid.
+    Overlaying two types of elements using the same grid. The images are on the third and fifth column while the text is on the second, fourth and sixth column. All the content spans two columns
   </div>
   <div class="full border"><br><br></div>
 </div>
