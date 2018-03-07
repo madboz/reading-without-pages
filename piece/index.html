@@ -62,8 +62,8 @@
 
    body { 
 
-      margin: 0;
-      padding: 0;
+      margin: auto 0;
+      padding: auto 0;
       display: inline-block;
       background-color: white; 
       font-family: arial;
@@ -79,11 +79,11 @@
       margin: 0;
       display: inline-block;
       position: relative;
-      padding-top: 25px;
-      padding-left: 35px;
-      padding-right: 35px;
-      padding-bottom: 25px;
-      width: 27vw;
+      padding-top: 2vw;
+      padding-left: 2.5vw;
+      padding-right: 2.5vw;
+      padding-bottom: 2vw;
+      width: 27%;
       height: 27vw;
       overflow: hidden;
 
@@ -199,6 +199,68 @@
    #one {
 
       background: #00bfff;
+
+   }
+
+   @media only screen and (max-width: 1000px) {
+
+      .array-body {
+
+         padding-top: 2.2vw;
+         padding-left: 2.7vw;
+         padding-right: 2.7vw;
+         padding-bottom: 2.2vw;
+         width: 42vw;
+         height: 42vw;
+         font-size: 1.6vw;
+         line-height: 2.2vw;
+
+      }
+
+      .array-title {
+
+         font-size: 3.2vw;
+         line-height: 4vw;
+
+      }
+
+      .quote {
+
+         font-size: 3.2vw;
+         line-height: 4vw;
+
+      }
+
+   }
+
+   @media only screen and (max-width: 700px) {
+
+      .array-body {
+
+         padding-top: 6vw;
+         padding-left: 7vw;
+         padding-right: 7vw;
+         padding-bottom: 6vw;
+         width: 85vw;
+         height: 85vw;
+         font-size: 3.8vw;
+         line-height: 4.8vw;
+
+      }
+
+      .array-title {
+
+         font-size: 6.7vw;
+         line-height: 8.6vw;
+
+      }
+
+      .quote {
+
+         font-size: 6.7vw;
+         line-height: 8.6vw;
+
+      }
 
    }
 
