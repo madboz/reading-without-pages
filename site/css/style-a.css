@@ -242,7 +242,8 @@ li > a:hover {
 
 #about {
 
-	color: red;
+	/*color: red;*/
+	padding-bottom: 1em;
 
 }
 
