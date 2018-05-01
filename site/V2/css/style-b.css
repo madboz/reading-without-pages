@@ -172,7 +172,10 @@ li > a:hover {
 
 }
 
-h2 { font-size: 1em; }
+h2 { font-size: 1em;
+padding-top: 1em;
+padding-bottom: 1em;
+text-align: center;}
 
 .body > p:first-of-type {
 
