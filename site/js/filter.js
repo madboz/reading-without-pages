@@ -1,95 +1,100 @@
-let articles = document.querySelectorAll(".article");
+//############ CONTENT FILTER ############
+
 let topic, format, area, time;
 
-let ulTopic = document.getElementById('leftTopic');
-
-ulTopic.onclick = function(event) {
-
-	let target = event.target;
-	let selectedTopic = target.innerHTML;
-	console.log();
-
-	for (let i = 0; i < articles.length; i++) {
-
-		topic = articles[i].dataset.topic;
-
-		if (topic.toLowerCase() !== selectedTopic.toLowerCase()) {
-
-			articles[i].style.display = "none";
-
-		} else {
-
-			articles[i].style.display = "inline-block";
-
-		}
-
-	}
-
-}
-
-let ulFormat = document.getElementById('leftFormat');
-
-ulFormat.onclick = function(event) {
-
-	let target = event.target;
-	let selectedFormat = target.innerHTML;
-	console.log(target.id);
-
-	for (let i = 0; i < articles.length; i++) {
-
-		format = articles[i].dataset.format;
-
-		if (format.toLowerCase() !== selectedFormat.toLowerCase()) {
-
-			articles[i].style.display = "none";
-
-		} else {
-
-			articles[i].style.display = "inline-block";
-
-		}
-
-	}
-
-}
-
-let ulArea = document.getElementById('leftArea');
-
-ulArea.onclick = function(event) {
-
-	let target = event.target;
-	let selectedArea = target.innerHTML;
-
-	for (let i = 0; i < articles.length; i++) {
-
-		area = articles[i].dataset.area;
-
-		if (area.toLowerCase() !== selectedArea.toLowerCase()) {
-
-			articles[i].style.display = "none";
-
-		} else {
-
-			articles[i].style.display = "inline-block";
-
-		}
-
-	}
-
-}
+let articles = document.querySelectorAll(".article");
 
 let ulTime = document.getElementById('leftTime');
+let ulTopic = document.getElementById('leftTopic');
+let ulArea = document.getElementById('leftArea');
+let ulFormat = document.getElementById('leftFormat');
 
 ulTime.onclick = function(event) {
 
 	let target = event.target;
-	let selectedTime = target.innerHTML;
+	time = target.dataset.tags;
+
+	let li = this.getElementsByTagName("a");
+		
+	for (let i = 0; i < li.length; i++) {
+
+		li[i].style.color = "black";
+		target.style.color = "grey";
+
+	}
+
+	updateArticles();
+	console.log("time is " + time);
+
+}
+
+ulTopic.onclick = function(event) {
+
+	let target = event.target;
+	topic = target.dataset.tags;
+
+	let li = this.getElementsByTagName("a");
+		
+	for (let i = 0; i < li.length; i++) {
+
+		li[i].style.color = "black";
+		target.style.color = "grey";
+
+	}
+
+	updateArticles();
+	console.log(target);
+	console.log("topic is " + topic);
+
+}
+
+ulArea.onclick = function(event) {
+
+	let target = event.target;
+	area = target.dataset.tags;
+
+	let li = this.getElementsByTagName("a");
+
+	for (let i = 0; i < li.length; i++) {
+
+		li[i].style.color = "black";
+		target.style.color = "grey";
+
+	}
+
+	updateArticles();
+	console.log("area is " + area);
+
+}
+
+ulFormat.onclick = function(event) {
+
+	let target = event.target;
+	format = target.dataset.tags;
+
+	let li = this.getElementsByTagName("a");
+		
+	for (let i = 0; i < li.length; i++) {
+
+		li[i].style.color = "black";
+		target.style.color = "grey";
+
+	}
+
+	updateArticles();
+	console.log("format is " + format);
+
+}
+
+function updateArticles() {
 
 	for (let i = 0; i < articles.length; i++) {
 
-		time = articles[i].dataset.time;
-
-		if (time.toLowerCase() !== selectedTime.toLowerCase()) {
+		if 	((time && !articles[i].dataset.tags.includes(time)) ||
+			(topic && !articles[i].dataset.tags.includes(topic)) ||
+			(area && !articles[i].dataset.tags.includes(area)) || 
+			(format && !articles[i].dataset.tags.includes(format)))
+		{
 
 			articles[i].style.display = "none";
 
@@ -102,12 +107,3 @@ ulTime.onclick = function(event) {
 	}
 
 }
-
-
-
-
-
-
-
-
-
