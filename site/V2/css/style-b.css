@@ -172,6 +172,8 @@ li > a:hover {
 
 }
 
+h2 { font-size: 1em; }
+
 .body > p:first-of-type {
 
     text-indent: 0;
