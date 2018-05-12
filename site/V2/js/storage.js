@@ -20,7 +20,7 @@ let titlesArrayBar = titlesArray.slice(-3);
 sessionStorage.setItem("titles", JSON.stringify(titlesArray));
 
 let barText = "";
-barText += titlesArrayBar.join(" — ");
+barText += titlesArrayBar.join(" &#8212 ");
 let bar = document.getElementById("bar-text");
 bar.innerHTML = barText;
 
