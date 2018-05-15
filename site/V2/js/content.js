@@ -5,6 +5,5 @@ const img_container = document.getElementById("img-container");
 for (let i = 1; i < 37; i++) {
 
 	img_container.innerHTML += '<img src="../content/im_google_' + i + '.jpg">';
-	console.log(i);
 
-};
+}
