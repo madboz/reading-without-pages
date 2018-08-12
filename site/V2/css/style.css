@@ -18,7 +18,11 @@
 
 }
 
-*::-webkit-scrollbar { width: 0 !important }
+*::-webkit-scrollbar { 
+
+	width: 0;
+
+}
 
 body {
 
@@ -61,9 +65,16 @@ video {
 
 }
 
+
 #left > a:last-of-type {
 
 	padding-bottom: 4.5em;
+
+}
+
+#matter {
+
+	padding-bottom: 1em;
 
 }
 
@@ -73,7 +84,6 @@ video {
 	grid-template-columns: 25vw 25vw 25vw;
 	grid-template-rows: 25vw 25vw 25vw;
 	grid-gap: 0px;
-
 	position: fixed;
 	left: 25vw;
 	top: 0;
@@ -117,14 +127,12 @@ video {
 
 }
 
-/* Figure out what to do with the key for black and whte */
-
 .key {
 
 	display: inline-block;
 	height: 0.6em;
 	width: 0.6em;
-	margin-left: 0.6em;
+	margin-left: 0.35em;
 	background-color: white;
 	visibility: hidden;
 
@@ -239,7 +247,7 @@ p + .indent-entire {
 
 }
 
-.article > a {
+.article > * {
 
 	position: absolute;
 	top: 50%;
@@ -250,7 +258,7 @@ p + .indent-entire {
 
 }
 
-#imgs-im-google > img {
+#images-im-google > img {
 
 	width: 27%;
 	padding-left: 0.75em;

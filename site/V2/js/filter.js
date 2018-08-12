@@ -1,4 +1,4 @@
-//############ CONTENT FILTER ############
+//*** CONTENT FILTER ***
 
 let topic, format, area, time;
 
@@ -19,7 +19,7 @@ ulTime.onclick = function(event) {
 	for (let i = 0; i < li.length; i++) {
 
 		li[i].style.color = "black";
-		target.style.color = "grey";
+		target.style.color = "red";
 
 	}
 
@@ -38,7 +38,7 @@ ulTopic.onclick = function(event) {
 	for (let i = 0; i < li.length; i++) {
 
 		li[i].style.color = "black";
-		target.style.color = "grey";
+		target.style.color = "red";
 
 	}
 
@@ -58,7 +58,7 @@ ulArea.onclick = function(event) {
 	for (let i = 0; i < li.length; i++) {
 
 		li[i].style.color = "black";
-		target.style.color = "grey";
+		target.style.color = "red";
 
 	}
 
@@ -77,7 +77,7 @@ ulFormat.onclick = function(event) {
 	for (let i = 0; i < li.length; i++) {
 
 		li[i].style.color = "black";
-		target.style.color = "grey";
+		target.style.color = "red";
 
 	}
 

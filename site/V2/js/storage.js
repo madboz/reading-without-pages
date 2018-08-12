@@ -1,6 +1,4 @@
-//############ SESSION STORAGE ############
-
-// sessionStorage.clear();
+//*** SESSION STORAGE ***
 
 let titlesArray;
 let retrievedData = sessionStorage.getItem("titles");
@@ -13,8 +11,22 @@ if (!retrievedData) {
 
 titlesArray = JSON.parse(retrievedData);
 
-let pageTitle = document.title;  
-titlesArray.push(pageTitle);
+let pageTitle = document.title;
+let pageLinkTitle;
+
+if (pageTitle == "Home") {
+
+	pageLinkTitle = "../index.html"
+
+} else {
+
+	pageLinkTitle = pageTitle.replace(/[^a-zA-Z0-9]/g,"_").toLowerCase() + ".html";
+
+}
+
+let pageLink = '<a href="' + pageLinkTitle +'">' + pageTitle + '</a>';
+
+titlesArray.push(pageLink);
 let titlesArrayBar = titlesArray.slice(-3);
 
 sessionStorage.setItem("titles", JSON.stringify(titlesArray));
@@ -24,18 +36,11 @@ barText += titlesArrayBar.join(" &#8212 ");
 let bar = document.getElementById("bar-text");
 bar.innerHTML = barText;
 
-console.log("titlesArrayBar is " + titlesArrayBar);
-console.log("titlesArray is " + titlesArray);
-
-
-
-//############ LOCAL STORAGE ############
-
-// localStorage.clear();
+//*** LOCAL STORAGE ***
 
 if (pageTitle == "Home") {
 
-	let counter = localStorage.getItem('counter');
+	let counter = localStorage.getItem("counter");
 
 	if (!counter) {
 
@@ -46,39 +51,6 @@ if (pageTitle == "Home") {
 	counter++;
 
 	localStorage.setItem("counter", counter);
-	console.log(localStorage.getItem('counter'));
+	console.log("Visited \"Home\" " + localStorage.getItem("counter") + " times");
 
 }
-
-
-
-//############ SAVE HISTORY ############
-
-// var z = new JSZip();
-
-// if (titlesArray.includes("Delete, Not Fade Away and Radiate")) {
-
-// 	console.log("got here");
-
-// }
-
-// z.folder("Session_01").file("Hello.txt", "Hello World\n");
-
-// var promise = null;
-
-// if (JSZip.support.uint8array) {
-
-// 	promise = z.generateAsync({type : "uint8array"});
-
-// } else {
-
-// 	promise = z.generateAsync({type : "string"});
-
-// }
-
-// z.generateAsync({type:"blob"}).then(function(content) {
-
-//     saveAs(content, "archive.zip");
-
-// });
-
