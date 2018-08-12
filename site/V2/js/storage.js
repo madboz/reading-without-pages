@@ -33,8 +33,8 @@ sessionStorage.setItem("titles", JSON.stringify(titlesArray));
 
 let barText = "";
 barText += titlesArrayBar.join(" &#8212 ");
-let bar = document.getElementById("bar-text");
-bar.innerHTML = barText;
+
+document.getElementById("bar-text").innerHTML = barText;
 
 //*** LOCAL STORAGE ***
 
@@ -53,4 +53,10 @@ if (pageTitle == "Home") {
 	localStorage.setItem("counter", counter);
 	console.log("Visited \"Home\" " + localStorage.getItem("counter") + " times");
 
+}
+
+//*** SAVING CONTENT ***
+
+function saveContent() {
+    alert("*Downloads content*");
 }
