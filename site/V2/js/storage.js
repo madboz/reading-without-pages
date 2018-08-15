@@ -1,4 +1,4 @@
-//*** SESSION STORAGE ***
+/*** Session Storage ***/
 
 let titlesArray;
 let retrievedData = sessionStorage.getItem("titles");
@@ -36,7 +36,7 @@ barText += titlesArrayBar.join(" &#8212 ");
 
 document.getElementById("bar-text").innerHTML = barText;
 
-//*** LOCAL STORAGE ***
+/*** Local Storage ***/
 
 if (pageTitle == "Home") {
 
@@ -55,7 +55,7 @@ if (pageTitle == "Home") {
 
 }
 
-//*** SAVING CONTENT ***
+/*** Saving Content ***/
 
 function saveContent() {
     alert("*Downloads content*");

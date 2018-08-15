@@ -1,4 +1,4 @@
-//*** IMAGES FOR I'M GOOGLE ***
+/*** Images for "I'm Google" ***/
 
 const images_im_google = document.getElementById("images-im-google");
 

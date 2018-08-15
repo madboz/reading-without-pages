@@ -1,4 +1,4 @@
-//*** CONTENT FILTER ***
+/*** Content Filter ***/
 
 let topic, format, area, time;
 
