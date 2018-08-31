@@ -3,219 +3,150 @@
 
   <title>Piece</title>
 
-<style type='text/css'>
-
-   * {
-
-      margin: 0;
-      padding: 0;
-      font-family: arial;
-      font-size: 1.15vw;
-      line-height: 1.55vw;
-      letter-spacing: 0.03em;
-      color: black;
-
-   }
-
-   *::-webkit-scrollbar { width: 0 !important }
-
-   #container {
-
-      width: 100vw;
-      background: white;
-      display: grid;
-
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-
-   }
-
-   .section {
-
-      display: inline-grid;
-      height: 29vw;
-      padding: 2vw 2.5vw;
-
-   }
-
-   .borders {
-
-      border-right: dashed 1px black;
-      border-bottom: dashed 1px black;
-
-   }
-
-   .large {
-
-      position: relative;
-
-   }
-
-   .large, .large > * {
-
-      background-color: greenyellow;
-      font-size: 2vw;
-      line-height: 2.7vw;
-      text-align: center;
-      text-transform: uppercase;
-
-   }
-
-   .center {
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 85%;
-
-   }
-   
-   .title {
-
-      text-align: left;
-      background: white;
-
-   }
 
 
-   img {
+   <style type='text/css'>
+      
+      * {
 
-      top: 25%;
-      width: 94%;
+         margin: 0;
+         padding: 0;
 
-   }
+      }
 
-   #eleven{
+      *::-webkit-scrollbar { 
 
-      background: #f4fcff;
+         width: 0;
 
-   }
+      }
+      
+      body {
 
-   #ten {
+         font-family: arial;
+         font-size: 1.15vw;
+         line-height: 1.55vw;
+         letter-spacing: 0.03em;
+         color: black;
 
-      background: #e5f8ff;
+      }
 
-   }
+      #container {
 
-   #nine {
+         width: 100vw;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-column-gap: 0;
+         grid-row-gap: 0;
 
-      background: #ccf2ff;
-
-   }
-
-   #eight {
-
-      background: #b2ebff;
-
-   }
-
-   #seven {
-
-      background: #99e5ff;
-
-   }
-
-   #six {
-
-      background: #7fdfff;
-
-   }
-
-   #five {
-
-      background: #66d8ff;
-
-   }
-
-   #four {
-
-      background: #4cd2ff;
-
-   }
-
-   #three {
-
-      background: #32cbff;
-
-   }
-
-   #two {
-
-      background: #19c5ff;
-
-   }
-
-   #one {
-
-      background: #00bfff;
-
-   }
-
-   /*@media only screen and (max-width: 1000px) {
+      }
 
       .section {
 
-         padding-top: 2.2vw;
-         padding-left: 2.7vw;
-         padding-right: 2.7vw;
-         padding-bottom: 2.2vw;
-         width: 42vw;
-         height: 42vw;
-         font-size: 1.6vw;
-         line-height: 2.2vw;
+         height: 29vw;
+         padding: 2vw 2.5vw;
+         display: inline-grid;
 
       }
 
-      .large {
+      .borders {
 
-         font-size: 3.2vw;
-         line-height: 4vw;
-
-      }
-
-      .large {
-
-         font-size: 3.2vw;
-         line-height: 4vw;
+         border-right: dashed 1px black;
+         border-bottom: dashed 1px black;
 
       }
 
-   }
+      .large, .large > * {
 
-   @media only screen and (max-width: 700px) {
-
-      .section {
-
-         padding-top: 6vw;
-         padding-left: 7vw;
-         padding-right: 7vw;
-         padding-bottom: 6vw;
-         width: 85vw;
-         height: 85vw;
-         font-size: 3.8vw;
-         line-height: 4.8vw;
+         position: relative;
+         font-size: 2vw;
+         line-height: 2.7vw;
+         text-align: center;
+         text-transform: uppercase;
+         background: greenyellow;
 
       }
 
-      .large {
+      .center {
 
-         font-size: 6.7vw;
-         line-height: 8.6vw;
+         top: 50%;
+         left: 50%;
+         width: 85%;
+         position: absolute;
+         transform: translate(-50%, -50%);
+
+      }
+      
+      .title {
+
+         text-align: left;
+         background: white;
 
       }
 
-      .large {
+      @media only screen and (max-width: 1000px) {
 
-         font-size: 6.7vw;
-         line-height: 8.6vw;
+         body {
+
+            font-size: 1.8vw;
+            line-height: 2.4vw;
+
+         }
+
+         #container {
+
+            grid-template-columns: 1fr 1fr;
+
+         }
+
+         .section {
+
+            height: 47vw;
+            padding: 3.5vw 4vw;
+
+         }
+
+         .large, .large > * {
+
+            font-size: 3.2vw;
+            line-height: 4.2vw;
+
+         }
 
       }
 
-   }*/
+      @media only screen and (max-width: 700px) {
 
-</style>
+         body {
+
+            font-size: 1.8vw;
+            line-height: 2.4vw;
+
+         }
+
+         #container {
+
+            grid-template-columns: 1fr;
+
+         }
+
+         .section {
+
+            height: 100vw;
+            padding: 3.5vw 4vw;
+
+         }
+
+         .large, .large > * {
+
+            font-size: 5.7vw;
+            line-height: 7vw;
+
+         }
+
+      }
+
+   </style>
+
 </head>
 <body>
 
@@ -223,36 +154,48 @@
 
    <script type='text/javascript'>
 
-      var contents = [];
       var container = document.getElementById("container");
+      var arr = [];
 
-      contents[0] = '<div class="section borders" id="ten">As someone who grew up on the internet, I credit it as one of the most important influences on who I am today. I had a computer with internet access in my bedroom from the age of 13. It gave me access to a lot of things which were totally inappropriate for a young teenager, but it was OK. The culture, politics, and interpersonal relationships which I consider to be central to my identity were shaped by the internet, in ways that I have always considered to be beneficial to me personally. I have always been a critical proponent of the internet and everything it has brought, and broadly considered it to be emancipatory and beneficial.</div>';
+      arr[0] = '<div class="section borders" style="background: #e5f8ff;">As someone who grew up on the internet, I credit it as one of the most important influences on who I am today. I had a computer with internet access in my bedroom from the age of 13. It gave me access to a lot of things which were totally inappropriate for a young teenager, but it was OK. The culture, politics, and interpersonal relationships which I consider to be central to my identity were shaped by the internet, in ways that I have always considered to be beneficial to me personally. I have always been a critical proponent of the internet and everything it has brought, and broadly considered it to be emancipatory and beneficial.</div>';
 
-      contents[8] = '<div class="section borders" id="nine">One of the hypothetical questions I ask myself frequently is how I would feel about my own children having the same kind of access to the internet today. And I find the question increasingly difficult to answer. I understand that this is a natural evolution of attitudes which happens with age, and at some point this question might be a lot less hypothetical. I don’t want to be a hypocrite about it. I would want my kids to have the same opportunities to explore and grow and express themselves as I did. I would like them to have that choice. And this belief broadens into attitudes about the role of the internet in public life as whole.</div>';
+      arr[8] = '<div class="section borders" style="background: #ccf2ff;">One of the hypothetical questions I ask myself frequently is how I would feel about my own children having the same kind of access to the internet today. And I find the question increasingly difficult to answer. I understand that this is a natural evolution of attitudes which happens with age, and at some point this question might be a lot less hypothetical. I don’t want to be a hypocrite about it. I would want my kids to have the same opportunities to explore and grow and express themselves as I did. I would like them to have that choice. And this belief broadens into attitudes about the role of the internet in public life as whole.</div>';
 
-      contents[9] = '<div class="section borders" id="eight">I’ve been aware for some time of the increasingly symbiotic relationship between younger children and YouTube. I see kids engrossed in screens all the time, in pushchairs and in restaurants, and there’s always a bit of a Luddite twinge there, but I am not a parent, and I’m not making parental judgments for or on anyone else. I’ve seen family members and friend’s children plugged into Peppa Pig and nursery rhyme videos, and it makes them happy and gives everyone a break, so OK.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But I don’t even have kids and right now I just want to burn the whole thing down.</div>';
+      arr[9] = '<div class="section borders" style="background: #b2ebff;">I’ve been aware for some time of the increasingly symbiotic relationship between younger children and YouTube. I see kids engrossed in screens all the time, in pushchairs and in restaurants, and there’s always a bit of a Luddite twinge there, but I am not a parent, and I’m not making parental judgments for or on anyone else. I’ve seen family members and friend’s children plugged into Peppa Pig and nursery rhyme videos, and it makes them happy and gives everyone a break, so OK.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But I don’t even have kids and right now I just want to burn the whole thing down.</div>';
 
-      contents[1] = '<div class="section borders" id="seven">Someone or something or some combination of people and things is using YouTube to systematically frighten, traumatise, and abuse children, automatically and at scale, and it forces me to question my own beliefs about the internet, at every level.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The video titles are a continuous pattern of obscure branded lines and tie-ins: Surprise Play Doh Eggs Peppa Pig Stamper Cars Pocoyo Minecraft Smurfs Kinder Play Doh Sparkle Brilho, Cars Screamin’ Banshee Eats Lightning McQueen Disney Pixar, Disney Baby Pop Up Pals Easter Eggs SURPRISE.</div>';
+      arr[1] = '<div class="section borders" style="background: #99e5ff;">Someone or something or some combination of people and things is using YouTube to systematically frighten, traumatise, and abuse children, automatically and at scale, and it forces me to question my own beliefs about the internet, at every level.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The video titles are a continuous pattern of obscure branded lines and tie-ins: Surprise Play Doh Eggs Peppa Pig Stamper Cars Pocoyo Minecraft Smurfs Kinder Play Doh Sparkle Brilho, Cars Screamin’ Banshee Eats Lightning McQueen Disney Pixar, Disney Baby Pop Up Pals Easter Eggs SURPRISE.</div>';
 
-      contents[3] = '<div class="section borders" id="six">YouTube broadcasters have  developed a huge number of tactics to draw parents’ and childrens’ attention to their videos, and the advertising revenues that accompany them. The first of these tactics is simply to copy and pirate other content. A simple search for “Peppa Pig” on YouTube in my case yielded “About 10,400,000 results” and the front page is almost entirely from the verified “Peppa Pig Official Channel”, while one is from an unverified channel called Play Go Toys, which you really wouldn’t notice unless you were looking out for it.</div>';
+      arr[3] = '<div class="section borders" style="background: #7fdfff;">YouTube broadcasters have  developed a huge number of tactics to draw parents’ and childrens’ attention to their videos, and the advertising revenues that accompany them. The first of these tactics is simply to copy and pirate other content. A simple search for “Peppa Pig” on YouTube in my case yielded “About 10,400,000 results” and the front page is almost entirely from the verified “Peppa Pig Official Channel”, while one is from an unverified channel called Play Go Toys, which you really wouldn’t notice unless you were looking out for it.</div>';
 
-      contents[4] = '<div class="section borders" id="five">Play Go Toys’ channel consists of (I guess?) pirated Peppa Pig and other cartoons, videos of toy unboxings, and videos of the channel owner’s own children. I am not alleging anything bad about Play Go Toys; I am simply illustrating how the structure of YouTube facilitates the delamination of content and author, and how this impacts on our awareness and trust of its source.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As another blogger notes, one of the traditional roles of branded content is that it is a trusted source. Whether it’s Peppa Pig on children’s TV or a Disney movie, whatever one’s feelings about the industrial model of entertainment production, they are carefully produced and monitored so that kids are essentially safe watching them, and can be trusted as such.</div>';
+      arr[4] = '<div class="section borders" style="background: #66d8ff;">Play Go Toys’ channel consists of (I guess?) pirated Peppa Pig and other cartoons, videos of toy unboxings, and videos of the channel owner’s own children. I am not alleging anything bad about Play Go Toys; I am simply illustrating how the structure of YouTube facilitates the delamination of content and author, and how this impacts on our awareness and trust of its source.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As another blogger notes, one of the traditional roles of branded content is that it is a trusted source. Whether it’s Peppa Pig on children’s TV or a Disney movie, whatever one’s feelings about the industrial model of entertainment production, they are carefully produced and monitored so that kids are essentially safe watching them, and can be trusted as such.</div>';
 
-      contents[5] = '<div class="section borders" id="four">A striking example of the weirdness is the Finger Family videos. I have no idea where they came from or the origin of the children’s rhyme at the core of the trope, but there are at least 17 million versions of this currently on YouTube, and again they cover every possible genre, with billions and billions of aggregated views.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once again, the view numbers of these videos must be taken under serious advisement. A huge number of these videos are essentially created by bots and viewed by bots, and even commented on by bots. That is a whole strange world in and of itself.</div>';
+      arr[5] = '<div class="section borders" style="background: #4cd2ff;">A striking example of the weirdness is the Finger Family videos. I have no idea where they came from or the origin of the children’s rhyme at the core of the trope, but there are at least 17 million versions of this currently on YouTube, and again they cover every possible genre, with billions and billions of aggregated views.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once again, the view numbers of these videos must be taken under serious advisement. A huge number of these videos are essentially created by bots and viewed by bots, and even commented on by bots. That is a whole strange world in and of itself.</div>';
 
-      contents[6] = '<div class="section borders" id="three">What I find somewhat disturbing about the proliferation of even normal kids videos is the impossibility of determining the degree of automation which is at work here; how to parse out the gap between human and machine. There is something weird about groups of people endlessly acting out the implications of a combination of algorithmically generated keywords: Halloween Finger Family & more Halloween Songs for Children | Kids Halloween Songs Collection, Australian Animals Finger Family Song | Finger Family Nursery Rhymes, Farm Animals Finger Family and more Animals Songs | Finger Family Collection, Superheroes Finger Family and more Finger Family Songs! Superhero Finger Family Collection.</div>';
+      arr[6] = '<div class="section borders" style="background: #32cbff;">What I find somewhat disturbing about the proliferation of even normal kids videos is the impossibility of determining the degree of automation which is at work here; how to parse out the gap between human and machine. There is something weird about groups of people endlessly acting out the implications of a combination of algorithmically generated keywords: Halloween Finger Family & more Halloween Songs for Children | Kids Halloween Songs Collection, Australian Animals Finger Family Song | Finger Family Nursery Rhymes, Farm Animals Finger Family and more Animals Songs | Finger Family Collection, Superheroes Finger Family and more Finger Family Songs! Superhero Finger Family Collection.</div>';
 
-      contents[7] = '<div class="section borders" id="two">Some Youtube channels do away with the human actors to create infinite reconfigurable versions of the same videos over and over again. What is occurring here is clearly automated. Stock animations, audio tracks, and lists of keywords being assembled in their thousands to produce an endless stream of videos. The above channel, Videogyan 3D Rhymes — Nursery Rhymes & Baby Songs</marl>, posts several videos a week, in increasingly byzantine combinations of keywords. They have almost five million subscribers — more than double Bounce Patrol — although once again it’s impossible to know who or what is actually racking up these millions and millions of views.</div>';
+      arr[7] = '<div class="section borders" style="background: #19c5ff;">Some Youtube channels do away with the human actors to create infinite reconfigurable versions of the same videos over and over again. What is occurring here is clearly automated. Stock animations, audio tracks, and lists of keywords being assembled in their thousands to produce an endless stream of videos. The above channel, Videogyan 3D Rhymes — Nursery Rhymes & Baby Songs</marl>, posts several videos a week, in increasingly byzantine combinations of keywords. They have almost five million subscribers — more than double Bounce Patrol — although once again it’s impossible to know who or what is actually racking up these millions and millions of views.</div>';
 
-      contents[10] = '<div class="section borders" id="one">Disturbing Peppa Pig videos, which tend towards extreme violence and fear, with Peppa eating her father or drinking bleach, are, it turns out very widespread. They make up an entire YouTube subculture. Many are obviously parodies, or even satires of themselves, in the pretty common style of the internet’s outrageous, deliberately offensive kind. All the 4chan tropes are there, the trolls are out, we know this.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The agency is less clear: the video starts with a trollish Peppa parody, but later syncs into the kind of automated repetition of tropes we’ve seen already. I don’t know which camp it belongs to. Maybe it’s just trolls. I kind of hope it is. But I don’t think so. Trolls don’t cover the intersection of human actors and more automated examples further down the line.</div>';
+      arr[10] = '<div class="section borders" style="background: #00bfff;">Disturbing Peppa Pig videos, which tend towards extreme violence and fear, with Peppa eating her father or drinking bleach, are, it turns out very widespread. They make up an entire YouTube subculture. Many are obviously parodies, or even satires of themselves, in the pretty common style of the internet’s outrageous, deliberately offensive kind. All the 4chan tropes are there, the trolls are out, we know this.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The agency is less clear: the video starts with a trollish Peppa parody, but later syncs into the kind of automated repetition of tropes we’ve seen already. I don’t know which camp it belongs to. Maybe it’s just trolls. I kind of hope it is. But I don’t think so. Trolls don’t cover the intersection of human actors and more automated examples further down the line.</div>';
 
-      contents[2] = '<div class="section borders large"><div class="center">This is content production in the age of algorithmic discovery — even if you’re a human, you have to end up impersonating the machine.</div></div>';
+      arr[2] = '<div class="section borders large"><div class="center">This is content production in the age of algorithmic discovery — even if you’re a human, you have to end up impersonating the machine.</div></div>';
 
-      contents[11] = '<div class="section borders large"><div class="center">We’re still struggling to find a way to even talk about it, to describe its mechanisms and its actions and its effects.</div></div>';
+      arr[11] = '<div class="section borders large"><div class="center">We’re still struggling to find a way to even talk about it, to describe its mechanisms and its actions and its effects.</div></div>';
 
-      contents[12] = '<div class="section borders large"><div class="center">This is being done</br>by people and by things and by a combination of things and people. Responsibility for its outcomes is impossible to assign.</div></div>';
+      arr[12] = '<div class="section borders large"><div class="center">This is being done</br>by people and by things and by a combination of things and people. Responsibility for its outcomes is impossible to assign.</div></div>';
 
-      contents[13] = '<div class="section borders large"><div class="center">This automation takes us to very, very strange places, and at this point the rabbithole is so deep that it’s impossible to know how such a thing came into being.</div></div>';
+      arr[13] = '<div class="section borders large"><div class="center">This automation takes us to very, very strange places, and at this point the rabbithole is so deep that it’s impossible to know how such a thing came into being.</div></div>';
+
+      container.innerHTML += '<div class="section large title borders">Something is Wrong </br>on the Internet</br></br> By James Bridle</div>';
+
+      shuffle(arr);
+
+      for (var i = 0; i < arr.length; i++) {
+
+         container.innerHTML += arr[i];
+
+      }
+
+      /*** Generic Shuffle Function ***/
 
       function shuffle(a) {
 
@@ -268,16 +211,6 @@
          }
 
          return a;
-
-      }
-
-      shuffle(contents);
-
-      container.innerHTML += '<div class="section large title borders">Something is Wrong </br>on the Internet</br></br> By James Bridle</div>';
-
-      for (var i = 0; i < contents.length; i++) {
-
-         container.innerHTML += contents[i];
 
       }
 

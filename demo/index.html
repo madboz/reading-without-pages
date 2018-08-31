@@ -4,40 +4,23 @@
 
    <title>Grid-Cloumn Demo</title>
 
-   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
-   <script>
-
-   $(document).ready(function() {
-
-      var clicked = true;
-
-      $('#lines-show').click(function() {
-
-         if(clicked == true) {
-
-         $('.border').css('border-color', 'white');
-         clicked = false;
-
-         } else if (clicked == false) {
-
-         $('.border').css('border-color', 'black');
-         clicked = true;
-
-         }
-
-      });
-
-   });
-
-   </script>
-
    <style>
 
-      body {
+      * {
 
          margin: 0;
          padding: 0;
+
+      }
+
+      *::-webkit-scrollbar { 
+
+         width: 0
+
+      }
+
+      body {
+
          font-family: arial, sans-serif;
          font-size: 2.1vw;
          letter-spacing: 0.01em;
@@ -377,7 +360,7 @@
 <div class='grid-container border'>
 
    <div class='full border'><h1>grid-column demo</h1></div>
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
    <!-- Left One One -->
 
@@ -393,13 +376,13 @@
 
    <div class='right-half item border'>
       Grid Container
-      <br><br>
-      .grid-container {<br>&nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;<br>&nbsp;&nbsp;&nbsp;&nbsp;grip-column-gap: 10px;<br>}<br><br><i>grid-template-columns</i> can take inputs in px, em, fr (fraction) or auto (adjust based on content size).
+      </br></br>
+      .grid-container {</br>&nbsp;&nbsp;&nbsp;&nbsp;display: grid;</br>&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;</br>&nbsp;&nbsp;&nbsp;&nbsp;grip-column-gap: 10px;</br>}</br></br><i>grid-template-columns</i> can take inputs in px, em, fr (fraction) or auto (adjust based on content size).
    </div>
 
    <!-- Left One Two -->
 
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
    <div class='left-half border'>
 
@@ -412,17 +395,17 @@
 
    <div class='right-half item border'>
       Grid Column
-      <br><br>
-      .left {<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / 3;<br>}<br><br>
-      .left {<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / span 2;<br>}<br><br>
-      .right {<br>&nbsp;&nbsp;&nbsp;&nbsp;grid-column: 3;<br>}
+      </br></br>
+      .left {</br>&nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / 3;</br>}</br></br>
+      .left {</br>&nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / span 2;</br>}</br></br>
+      .right {</br>&nbsp;&nbsp;&nbsp;&nbsp;grid-column: 3;</br>}
    </div>
 
    <!-- Left Two -->
 
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
    <div class='full border'><h1>applications</h1></div>
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
    <div class='left-half border'>
 
@@ -445,34 +428,34 @@
 
    <div class='right-half item border'>
       Image Treatments
-      <br><br>
+      </br></br>
       Grid columns can be used to create compositions with images by placing them in columns.
    </div>
 
    <!-- Left Five -->
 
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
    <div class='left-five border'>
 
    <div class='five-one border'>
-      <strong><center>A Glance at British Wildflowers</center></strong><br>
+      <strong><center>A Glance at British Wildflowers</center></strong></br>
       It is this tender and sheltering character of the mountains of the Lake district that is one main source of their charm. So rugged and lofty, and yet so mellow and delicate! No shaggy, weedy growths or tangles anywhere; nothing wilder than the bracken, which at a distance looks as solid as the grass.
    </div>
 
    <div class='five-two border'>
       <center>1.</center>
-      <br><br>
+      </br></br>
       Nothing was more unlike what I was used to at home than this universal tendency (the same is true in Scotland and in Wales) to grass, and, on the lower slopes, to bracken, as if these were the only two plants in nature. Many of these eminences in the north of England, too lofty for hills and too smooth for mountains, are called fells. The railway between Carlisle and Preston winds between them, as Houghill Fells, Tebay Fells, Shap Fells, etc.
-      <br><br> 
+      </br></br> 
       At Alloway, whither I flitted from Glasgow, I first put my hand into the British nettle, and, I may add, took it out again as quickly as if I had put it into the fire.
     </div>
 
    <div class='five-three border'>
       <center>2.</center>
-      <br><br>
+      </br></br>
       They are, even in midsummer, of such a vivid and uniform green that it seems as if they must have been painted. Nothing blurs or mars the hue; no stalk of weed or stem of dry grass. The scene, in singleness and purity of tint, rivals the blue of the sky. Nature does not seem to ripen and grow sere as autumn approaches, but wears the tints of May in October.
-      <br><br>
+      </br></br>
       It is a dark green, rankly growing plant, from one to two feet high, that asks no leave of anybody. It is the police that protects every flower in the hedge. To "pluck the flower of safety from the nettle danger" is a figure of speech that has especial force in this island.
    </div>
 
@@ -482,36 +465,36 @@
 
    <div class="right-half item border">
       Text and Proportions
-      <br><br>
+      </br></br>
       A more traditional application of columns would be for dividing the page into sections for multiple texts to have space on the page at once.
-      <br><br>
+      </br></br>
       Grid columns can be used to display one flowing text as well.
    </div>
 
    <!-- Left Three -->
 
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
    <div class='left-half-six border'>
 
    <div class='inner-third-one border'>
 
       <img class='pad-top' src='https://smhttp-ssl-17653.nexcesscdn.net/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/g/o/go341.jpg'>
-      <br><br>
+      </br></br>
       <img src='https://cdn.shopify.com/s/files/1/0800/4071/t/1/assets/2_Soil.png?7509420516077259860'>
-      <br><br>
+      </br></br>
       <img class='pad-top' src='http://cdn3.bigcommerce.com/s-maeli/products/3550/images/15925/germini_jordy__49613.1443723898.500.500.png?c=2'>
 
    </div>
 
    <div class='inner-third-two border'>
-      <center><strong>A Glance at British Wildflowers</strong></center><br>
+      <center><strong>A Glance at British Wildflowers</strong></center></br>
       It is this tender and sheltering character of the mountains of the Lake district that is one main source of their charm. So rugged and lofty, and yet so mellow and delicate! No shaggy, weedy growths or tangles anywhere; nothing wilder than the bracken, which at a distance looks as solid as the grass.
    </div>
 
    <div class='inner-third-three border'>
       The wool of the dams could hardly be softer to the foot. The last of July the grass was still short and thick, as if it never shot up a stalk and produced seed, but always remained a fine, close mat.
-      <br><br> 
+      </br></br> 
       They are apparently as copious and exhaustless as they were three centuries ago. Britain might well appropriate to herself the last half of Emerson's quatrain:—
    </div>
 
@@ -521,18 +504,18 @@
 
    <div class='right-half item border'>
       Image and Text
-      <br><br>
+      </br></br>
       Using text and images in the same grid to create interactions between them.
    </div>
 
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
    <!-- Left four -->
 
    <div class='left-half border'>
 
       <div class='one border'>
-         <center>VIII<br>A GLANCE AT BRITISH WILD FLOWERS</center><br>
+         <center>VIII</br>A GLANCE AT BRITISH WILD FLOWERS</center></br>
          The first flower I plucked in Britain was the daisy, in one of the parks in Glasgow. The sward had recently been mown, but the daisies dotted it as
       </div>
       <div class='three border'></div>
@@ -544,11 +527,11 @@
 
    <div class='right-half item border'>
       Full Bleed Image
-      <br><br>
+      </br></br>
       Blocks of images can be created by filling entire columns with images. These methods can be nested to build up more complex layouts.
    </div>
 
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
    <!-- Left six -->
 
@@ -557,21 +540,21 @@
       <div class='border'></div>
 
       <div class='inner-six-one border'>
-         <center>VIII<br>A GLANCE AT BRITISH WILD FLOWERS</center><br>
+         <center>VIII</br>A GLANCE AT BRITISH WILD FLOWERS</center></br>
          The first flower I plucked in Britain was the daisy, in one of the parks in Glasgow. The sward had recently been mown, but the daisies dotted it as thickly as stars. It is a flower almost as common as the grass; find a square foot of greensward anywhere, and you are pretty sure to find a daisy, probably several of them. Bairnwort—child's flower—it is called in some parts, and its expression is truly infantile. 
-         <br><br> 
+         </br></br> 
          It is the favorite of all the poets, and when one comes to see it he does not think it has been a bit overpraised. Some flowers please us by their intrinsic beauty of color and form; others by their expression of certain human qualities: the daisy has a modest, lowly, unobtrusive look that is very taking.
       </div>
 
       <div class='inner-six-two border'>
          It is the favorite of all the poets, and when one comes to see it he does not think it has been a bit overpraised. Some flowers please us by their intrinsic beauty of color and form; others by their expression of certain human qualities: the daisy has a modest, lowly, unobtrusive look that is very taking. A little white ring, its margin unevenly touched with crimson, it looks up at one like the eye of a child.
-         <br><br><center>IX<br>BRITISH FERTILITY</center><br> 
+         </br></br><center>IX</br>BRITISH FERTILITY</center></br> 
          In crossing the Atlantic from the New World to the Old, one of the first intimations the traveler has that he is nearing a strange shore, and an old and populous one, is the greater boldness and familiarity of the swarms of sea-gulls that begin to hover in the wake of the ship.
       </div>
 
       <div class='inner-six-three border'>
          Thou unassuming Commonplace Of Nature, with that homely face, and yet with something of a grace, which Love makes for thee!
-         <br><br>
+         </br></br>
          The New Englander who sees with evil forebodings the rapid falling off of the birth-rate in his own land, the family rills shrinking in these later generations, like his native streams in summer, and who consequently fears for the perpetuity of the race, may see something to comfort him in the British islands. Behold the fecundity of the parent stock! 
       </div>
 
@@ -591,15 +574,43 @@
 
    <div class='right-half item border'>
       Overlaying Grids
-      <br><br>
+      </br></br>
       Overlaying two types of elements using the same grid. The images are on the third and fifth column while the text is on the second, fourth and sixth column. All the content spans two columns.
    </div>
 
-   <div class='full border'><br><br></div>
+   <div class='full border'></br></br></div>
 
 </div> 
 
 <!-- End of container -->
+
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+   <script>
+
+      $(document).ready(function() {
+
+         var clicked = true;
+
+         $('#lines-show').click(function() {
+
+            if(clicked == true) {
+
+            $('.border').css('border-color', 'white');
+            clicked = false;
+
+            } else if (clicked == false) {
+
+            $('.border').css('border-color', 'black');
+            clicked = true;
+
+            }
+
+         });
+
+      });
+
+   </script>
 
 </body>
 </html>
