@@ -21,26 +21,35 @@
 
       body {
 
-         font-family: arial, sans-serif;
+         font-family: arial;
          font-size: 2.1vw;
          letter-spacing: 0.01em;
 
       }
 
-      #lines-show {
+      h1 {
 
-         height: 1.4vw;
-         width: 1.4vw;
+         font-size: 2.1vw;
+         font-weight: normal;
+         text-transform: uppercase;
+         text-align: center;
+         line-height: 1.6em;
+
+      }
+
+      #btn {
+
          position: fixed;
-         top: 1.4vw;
-         right: 1.4vw;
+         top: 1.2vw;
+         right: 1.2vw;
+         height: 1.6vw;
+         width: 1.6vw;
          background: red;
-         z-index: 100;
          border-radius: 50%;
 
       }
 
-      #lines-show:hover {
+      #btn:hover {
 
          cursor: pointer;
 
@@ -55,13 +64,13 @@
 
       }
 
-      h1 {
+      .left-margin {
 
-         font-size: 2.1vw;
-         font-weight: normal;
-         text-transform: uppercase;
-         text-align: center;
-         line-height: 1.6em;
+         position: fixed;
+         height: 100%;
+         width: 4vw;
+         grid-column: 1;
+         z-index: 1;
 
       }
 
@@ -79,19 +88,8 @@
 
       .border {
 
-         border: solid 1px black;
-
-      }
-
-      .left-m {
-
-         grid-column: 1;
-
-      }
-
-      .right-m {
-
-         grid-column: 4;
+         border-right: solid 2px black;
+         border-bottom: solid 2px black;
 
       }
 
@@ -219,7 +217,7 @@
       .three {
 
          grid-column: 3;
-         background-image: url(http://espacepourlavie.ca/sites/espacepourlavie.ca/files/styles/gal-photo-large/public/istock_000015226257_620px_0.jpg?itok=PpAZwCt7);
+         background-image: url(img/dirt.jpg);
          background-size: 200%;
          overflow: hidden;
 
@@ -228,7 +226,7 @@
       .four {
 
          grid-column: 4;
-         background-image: url(http://espacepourlavie.ca/sites/espacepourlavie.ca/files/styles/gal-photo-large/public/istock_000015226257_620px_0.jpg?itok=PpAZwCt7);
+         background-image: url(img/dirt.jpg);
          background-size: 200%;
          overflow: hidden;
 
@@ -318,7 +316,6 @@
          grid-row: row 2;
          grid-column: 3 / span 2;
          z-index: 0;
-         opacity: 0.8;
          height: 10vw;
 
       }
@@ -330,7 +327,6 @@
          grid-row: row 2;
          grid-column: 5 / span 2;
          z-index: 100;
-         opacity: 0.8;
          height: 10vw;
 
       }
@@ -353,18 +349,20 @@
 </head>
 <body>
 
-<div id='lines-show'></div>
+<div id='btn'></div>
 
 <!-- Beginning of container -->
 
-<div class='grid-container border'>
+<div class='grid-container'>
+
+   <div class="left-margin border"></div>
 
    <div class='full border'><h1>grid-column demo</h1></div>
    <div class='full border'></br></br></div>
 
    <!-- Left One One -->
 
-   <div class='left-half border'>
+   <div class='left-half'>
 
       <div class='left-first border'></div>
       <div class='mid-first border'></div>
@@ -380,11 +378,13 @@
       .grid-container {</br>&nbsp;&nbsp;&nbsp;&nbsp;display: grid;</br>&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr 2fr 1fr;</br>&nbsp;&nbsp;&nbsp;&nbsp;grip-column-gap: 10px;</br>}</br></br><i>grid-template-columns</i> can take inputs in px, em, fr (fraction) or auto (adjust based on content size).
    </div>
 
-   <!-- Left One Two -->
+   <!-- Header 1 -->
 
    <div class='full border'></br></br></div>
 
-   <div class='left-half border'>
+   <!-- Left One Two -->
+
+   <div class='left-half'>
 
     <div class='left-two-first border'></div>
     <div class='right-two-first border'></div>
@@ -401,25 +401,27 @@
       .right {</br>&nbsp;&nbsp;&nbsp;&nbsp;grid-column: 3;</br>}
    </div>
 
-   <!-- Left Two -->
+   <!-- Header Two -->
 
    <div class='full border'></br></br></div>
    <div class='full border'><h1>applications</h1></div>
    <div class='full border'></br></br></div>
 
-   <div class='left-half border'>
+   <!-- Left Two -->
+
+   <div class='left-half'>
 
       <div class='border img-left'>
-         <img src='http://cyprus-florist.com/img/gerbera.jpg'>
+         <img src='img/flw-4.png'>
       </div>
       <div class='border img-right'>
-         <img src='https://www.fiftyflowers.com/site_files/FiftyFlowers/Image/Product/Coral_couture_Gerber_Bismark_stem-500_af780fab.jpg'>
+         <img src='img/flw-2.png'>
       </div>
       <div class='border img-left'>
-         <img src='https://i0.wp.com/ajournalofmusicalthings.com/wp-content/uploads/daisy2.jpg?fit=1386%2C1385'>
+         <img src='img/flw-1.jpg'>
       </div>
       <div class='border img-right'>
-         <img src='http://cdn3.bigcommerce.com/s-maeli/products/3550/images/15925/germini_jordy__49613.1443723898.500.500.png?c=2'>
+         <img src='img/flw-3.png'>
       </div>
 
    </div>
@@ -432,11 +434,13 @@
       Grid columns can be used to create compositions with images by placing them in columns.
    </div>
 
-   <!-- Left Five -->
+   <!-- Header -->
 
    <div class='full border'></br></br></div>
 
-   <div class='left-five border'>
+   <!-- Left Five -->
+
+   <div class='left-five'>
 
    <div class='five-one border'>
       <strong><center>A Glance at British Wildflowers</center></strong></br>
@@ -471,11 +475,13 @@
       Grid columns can be used to display one flowing text as well.
    </div>
 
-   <!-- Left Three -->
+   <!-- Header -->
 
    <div class='full border'></br></br></div>
 
-   <div class='left-half-six border'>
+   <!-- Left Three -->
+
+   <div class='left-half-six'>
 
    <div class='inner-third-one border'>
 
@@ -483,7 +489,7 @@
       </br></br>
       <img src='https://cdn.shopify.com/s/files/1/0800/4071/t/1/assets/2_Soil.png?7509420516077259860'>
       </br></br>
-      <img class='pad-top' src='http://cdn3.bigcommerce.com/s-maeli/products/3550/images/15925/germini_jordy__49613.1443723898.500.500.png?c=2'>
+      <img class='pad-top' src='img/flw-3.png'>
 
    </div>
 
@@ -512,7 +518,7 @@
 
    <!-- Left four -->
 
-   <div class='left-half border'>
+   <div class='left-half'>
 
       <div class='one border'>
          <center>VIII</br>A GLANCE AT BRITISH WILD FLOWERS</center></br>
@@ -535,7 +541,7 @@
 
    <!-- Left six -->
 
-   <div class='left-half-six-six border'>
+   <div class='left-half-six-six'>
 
       <div class='border'></div>
 
@@ -559,11 +565,11 @@
       </div>
 
       <div class='image-one'>
-         <img src='https://www.fiftyflowers.com/site_files/FiftyFlowers/Image/Product/Coral_couture_Gerber_Bismark_stem-500_af780fab.jpg'>
+         <img src='img/flw-2.png'>
       </div>
 
       <div class='image-two'>
-         <img src='http://cdn3.bigcommerce.com/s-maeli/products/3550/images/15925/germini_jordy__49613.1443723898.500.500.png?c=2'>
+         <img src='img/flw-3.png'>
       </div>
 
       <div class='border'></div>
@@ -584,33 +590,38 @@
 
 <!-- End of container -->
 
-   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script>
 
-   <script>
+	    var clicked = true;
 
-      $(document).ready(function() {
+	    var btn = document.getElementById("btn");
+	    var lines = document.getElementsByClassName("border");
 
-         var clicked = true;
+	    btn.onclick = function() {
 
-         $('#lines-show').click(function() {
+	    	if (clicked == true) {
 
-            if(clicked == true) {
+	        	for (i = 0; i < lines.length; i++) {
 
-            $('.border').css('border-color', 'white');
-            clicked = false;
+	        		lines[i].style.borderColor = "transparent";
+	      			clicked = false;
 
-            } else if (clicked == false) {
+	        	}
 
-            $('.border').css('border-color', 'black');
-            clicked = true;
+	    	} else if (clicked == false) {
 
-            }
+	    		for (i = 0; i < lines.length; i++) {
 
-         });
+	        		lines[i].style.borderColor = "black";
+	      			clicked = true;
 
-      });
+	        	}
 
-   </script>
+	    	}
+
+	    }
+
+	</script>
 
 </body>
 </html>
